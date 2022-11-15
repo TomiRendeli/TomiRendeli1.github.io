@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  height: 100px;
+  background: #4d4d5c;
+  padding: 0 50px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  text-transform: uppercase;
+  color: #6cc091;
+  font-weight: 200;
+  -webkit-animation-name: cambiarColor;
+          animation-name: cambiarColor;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+header .logo:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes cambiarColor {
+  from {
+    color: #6cc091;
+  }
+  to {
+    color: #fff;
+  }
+}
+
+@keyframes cambiarColor {
+  from {
+    color: #6cc091;
+  }
+  to {
+    color: #fff;
+  }
+}
+
+header .menu a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .menu a:hover {
+  color: aqua;
+}
+
+header .mostrar-menu,
+header .esconder-menu {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .mostrar-menu:hover,
+header .esconder-menu:hover {
+  color: aqua;
+}
+
+header .mostrar-menu {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+header .mostrar-menu:hover {
+  color: aqua;
+}
+
+header #check {
+  display: none;
+}
+
+#banner {
+  padding: 0 50px;
+  background-image: url(../imagenes/edificio.jpg);
+  height: 45vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner #banner::before {
+  content: '';
+  background: rgba(77, 77, 92, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 45vh;
+  left: 0;
+}
+
+#banner .contenido-banner {
+  position: relative;
+  color: seashell;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#banner .contenido-banner .contenido-banner h3 {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 30px 0px;
+}
+
+#banner .contenido-banner .boton-empezar {
+  text-decoration: none;
+  color: seashell;
+  border: 1px solid #6cc091;
+  padding: 20px 40px;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+#banner .contenido-banner .boton-empezar:hover {
+  background: #6cc09070;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#descripcion {
+  padding: 0 50px;
+  height: 45vh;
+  background-size: cover;
+  background-position: bottom;
+  background-image: url(../imagenes/edificio.jpg);
+}
+
+#descripcion .contenido-descripcion {
+  position: relative;
+  color: seashell;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#descripcion .contenido-descripcion h3 {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 30px 0px;
+}
+
+#descripcion img {
+  height: 100px;
+  width: 100px;
+}
+
+#descripcion::before {
+  content: '';
+  background: rgba(96, 96, 109, 0.418);
+  position: absolute;
+  width: 100%;
+  height: 45vh;
+  left: 0;
+}
+
+#personas {
+  padding: 50px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 50px 50px;
+}
+
+#personas img {
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+}
+
+#personas img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#personas div {
+  padding: 30px 30px;
+}
+
+#personas div #personas div h4 {
+  color: #4d4d5c;
+  font-size: 20px;
+  margin: 25px 10px;
+  padding: 10px;
+}
+
+#personas div #personas div p {
+  color: #4d4d5c87;
+  font-size: 18px;
+  margin: 15px;
+}
+
+.boton-saber-mas {
+  display: inline-block;
+  text-decoration: none;
+  color: #6cc091;
+  padding: 10px 30px;
+  border: 3px solid #6cc091;
+  border-radius: 30px;
+  margin-top: 15px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.boton-saber-mas:hover {
+  background: #6cc091;
+  color: #fff;
+}
+
+#iconos {
+  padding: 30px 30px;
+  background: rgba(77, 77, 92, 0.6);
+}
+
+#iconos #contenido-iconos {
+  padding: 50px 50px 0px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+#iconos #contenido-iconos #contenido-iconos div {
+  color: #6cc091;
+}
+
+#iconos #contenido-iconos #contenido-iconos div h6 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 10px 0px;
+}
+
+#iconos #contenido-iconos #contenido-iconos div p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 15px;
+}
+
+#iconos #contenido-iconos div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 20px 0px;
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#iconos img {
+  width: 100px;
+  width: 100px;
+}
+
+.boton-iconos {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+#contacto {
+  background: #6cc091;
+  padding: 50px 0px;
+  color: #fff;
+}
+
+#contacto .datos-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contacto .mensaje {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+
+#contacto h4 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#contacto form {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.datos-form div {
+  padding: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  background: #6cc091;
+  border-radius: 10px;
+  border: 2px solid #8dcca9;
+  padding: 10px 5px;
+  outline: 0;
+  color: #fff;
+  width: 100%;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #4bae77;
+  -webkit-box-shadow: 0 0 0 1px #4bae77;
+          box-shadow: 0 0 0 1px #4bae77;
+}
+
+form input::-webkit-input-placeholder,
+form textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+form input:-ms-input-placeholder,
+form textarea:-ms-input-placeholder {
+  color: #fff;
+}
+
+form input::-ms-input-placeholder,
+form textarea::-ms-input-placeholder {
+  color: #fff;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #fff;
+}
+
+.boton-formulario .boton-saber-mas {
+  display: block;
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.boton-formulario .boton-saber-mas:hover {
+  background: #4fa776ad;
+}
+
+footer {
+  background: #4d4d5c;
+  color: #cccccc4a;
+  text-align: center;
+  padding: 10px 0px;
+}
+/*# sourceMappingURL=style.css.map */

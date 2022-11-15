@@ -1,0 +1,52 @@
+#iconos{
+    padding: 30px 30px;
+    background: rgba(77, 77, 92, 0.6);
+
+    #contenido-iconos{
+        padding: 50px 50px 0px 50px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+
+        #contenido-iconos div {
+        color: #6cc091;
+
+            }
+
+        #contenido-iconos div h6{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 100;
+        margin: 10px 0px;
+
+}
+
+        #contenido-iconos div p{
+        color: rgba(255, 255, 255, 0.55);
+        font-size: 15px;
+}
+            }
+    
+    #contenido-iconos div{
+        flex: 1;
+        margin: 20px 0px;
+        border-right: 2px solid rgba(255, 255, 255, 0.2);
+    
+          }
+    
+}
+
+#iconos img{
+    width: 100px;
+    width: 100px;
+}
+
+
+
+
+
+.boton-iconos{
+    text-align: center;
+    padding-bottom: 50px;
+}
